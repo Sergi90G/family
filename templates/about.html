@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} fitnes page {% endblock %}
+{% block content %}
+<h1><b>MYFITNESS</b></h1>
+<p>this is our fitness</p>
+<div class="row">
+</div>
+<img within="0,1" src="https://image.boxrox.com/2022/02/CrossFit-Open-beginner.jpg" alt="famil">
+<img within="0,1" src="https://res.cloudinary.com/duu3v9gfg/image/fetch/t_fit_1920/https://78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com/up/2022/12/C0166DA6-E30E-4D5A-98A4-112305-1671739494.jpeg" alt="famil">
+{% for sports in list_of_sport %}
+<p> we have group of {{sports}}</p>
+{% endfor %}
+{% endblock %}
